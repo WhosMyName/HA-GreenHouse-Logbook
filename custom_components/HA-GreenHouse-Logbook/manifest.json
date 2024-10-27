@@ -1,0 +1,15 @@
+{
+    "domain": "ha-greenhouse-logbook",
+    "name": "HA GreenHouse Logbook",
+    "requirements": [
+        "module==0.0.0"
+    ],
+    "codeowners": [
+        "@WhosMyName"
+    ],
+    "dependencies": [],
+    "documentation": "",
+    "integration_type": "device",
+    "iot_class": "assumed_state",
+    "version": "0.1.0"
+}
