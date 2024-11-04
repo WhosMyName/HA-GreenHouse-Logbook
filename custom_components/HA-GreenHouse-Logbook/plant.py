@@ -15,8 +15,8 @@ from homeassistant.components.alarm_control_panel import AlarmControlPanelEntity
 
 # CameraEntity:
 # to select a image-capturing input device
-# and use shome whacky bounding box to select specific plants and zoom into bbox
-# daily images of plants
+# and use some whacky bounding box to select specific plants and zoom into bbox
+# daily/hourly images of plants -> 
 # maybe timelapses
 
 # SensorEntity:
@@ -32,8 +32,12 @@ from homeassistant.components.alarm_control_panel import AlarmControlPanelEntity
 # TodoListEntity:
 # checkboxes for watering, fertilizing, pest control, trimming
 
+# some calendar entity -> calndar button -> popup calendar
+# for displaying a calendar
+
 # AlarmControlPanelEntity:
 # set timeframe and alarm the user if plant hasn't been watered within of the timeframe
+# plant state on time schedule -> Seed -> Seedling -> Young plant -> Flower -> Fruits 
 
 
 class Plant(CameraEntity, ):
