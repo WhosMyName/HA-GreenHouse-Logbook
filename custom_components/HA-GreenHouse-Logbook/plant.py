@@ -16,7 +16,7 @@ from homeassistant.components.alarm_control_panel import AlarmControlPanelEntity
 # CameraEntity:
 # to select a image-capturing input device
 # and use some whacky bounding box to select specific plants and zoom into bbox
-# daily/hourly images of plants -> 
+# daily/hourly images of plants ->
 # maybe timelapses
 
 # SensorEntity:
@@ -37,8 +37,20 @@ from homeassistant.components.alarm_control_panel import AlarmControlPanelEntity
 
 # AlarmControlPanelEntity:
 # set timeframe and alarm the user if plant hasn't been watered within of the timeframe
-# plant state on time schedule -> Seed -> Seedling -> Young plant -> Flower -> Fruits 
+# plant state on time schedule -> Seed -> Seedling -> Young plant -> Flower -> Fruits
 
 
 class Plant(CameraEntity, ):
-    pass
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.should_poll = False
+        self.device_class = str()
+        self.has_entity_name = True
+        self.name = ""
+        self.supported_features = int()
+
+    @property
+    def icon(self) -> str | None:
+        """Icon of the entity."""
+        return "mdi:pine-tree"
